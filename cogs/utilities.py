@@ -13,7 +13,7 @@ class Utilities(commands.Cog):
     """
 
     @commands.command()
-    async def ping(self, ctx: Context):
+    async def pingBot(self, ctx: Context):
         """
         Status check
         """
