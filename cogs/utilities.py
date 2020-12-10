@@ -3,6 +3,8 @@ from discord import *
 from discord.ext import commands
 from discord.ext.commands import Context
 import time
+import os
+import random
 
 
 class Utilities(commands.Cog):
@@ -36,7 +38,7 @@ class Utilities(commands.Cog):
         """
         await ctx.message.delete()
 
-        embed = Embed(title="Oh Mr Poggers!", description="Poggers Poggers, Poggers <@284352754321719296>", color=discord.Colour.green())
+        embed = Embed(title='POGGERS!', description='Poggers Poggers, Poggers <@284352754321719296>', color=discord.Colour.green())
         embed.set_footer(icon_url=ctx.author.avatar_url, text= f'Requested by {ctx.author.name}')
         await ctx.send(embed=embed)
 
@@ -45,4 +47,6 @@ class Utilities(commands.Cog):
         """
         sends a random image from the great pog wars
         """
-        
+        files = os.listdir('./Poggers')
+        index = random.randint(0, len(files))    
+        await ctx.send(file= File(f'./Poggers/{files[index]}'))
