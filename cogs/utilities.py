@@ -34,10 +34,10 @@ class Utilities(commands.Cog):
     @commands.command()
     async def pog(self, ctx: Context):
         """
-        Pings @Joel Adams#4893 because why not
+        Responds with random message
         """
         await ctx.message.delete()
-        pogMessages = ['you pogged?', 'Once you pog you just can\'t stop', 'Pogging bells pogging bells, pogging all the way', 'You just tested positive for pog', 'Certified Poggers Moment™️']
+        pogMessages = ['you pogged?', 'Once you pog you just can\'t stop', 'Pogging bells, pogging bells, pogging all the way', 'You just tested positive for pog', 'Certified Poggers Moment™️']
         embed = Embed(title='POGGERS!', description=pogMessages[random.randint(0, len(pogMessages)-1)], color=discord.Colour.green())
         embed.set_footer(icon_url=ctx.author.avatar_url, text= f'Requested by {ctx.author.name}')
         await ctx.send(embed=embed)
