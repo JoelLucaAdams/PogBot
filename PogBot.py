@@ -51,7 +51,7 @@ async def on_message(message):
     Checks if the users input contains pog and reacts with :andyPog:
     """
     if message.content.lower().__contains__('pog') and not message.author.bot:
-        await message.add_reaction(r'<:andypog:764160369912315905>')
+        await message.add_reaction(r'<:andypog:764160369912315905>') # use \:andypog: to get link
     await bot.process_commands(message)
 
 
