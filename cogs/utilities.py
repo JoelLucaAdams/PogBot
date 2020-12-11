@@ -45,7 +45,7 @@ class Utilities(commands.Cog):
     @commands.command()
     async def image(self, ctx: Context):
         """
-        sends a random image from the great pog wars
+        Responds with a random image from the great pog wars
         """
         files = os.listdir('./Poggers')
         index = random.randint(0, len(files))    
