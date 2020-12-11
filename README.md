@@ -10,9 +10,11 @@ Before using the poggers you must poggers a `.env` file which includes the pogge
 
 Users can query poggers using the following commands:
 
-`!pog` - main bot command
+`!pog` - bot prefix
 
-`!pog ping` - Pings @Joel Adams#4893
+`!pog pog` - Pings a random message back to the user
+
+`!pog image` - Returns a random image from the great Pog wars
 
 ## Preview of the bot working
 
