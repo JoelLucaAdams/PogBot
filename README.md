@@ -18,4 +18,4 @@ Users can query poggers using the following commands:
 
 ## Preview of the bot working
 
-![Preview]()
+![Preview](https://raw.githubusercontent.com/JoelLucaAdams/PogBot/main/preview.png)
